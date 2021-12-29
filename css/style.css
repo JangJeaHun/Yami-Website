@@ -95,7 +95,7 @@ a,  a:link{
 .aside-wrap{
     border-top: 1px solid #191919;
     background: #f1f1f1;
-    margin: 2rem auto;
+
 }
 .aside-wrap a{
     color: #d60c00;
@@ -105,10 +105,9 @@ a,  a:link{
     display: flex;
     justify-content: center;
     column-gap: 3rem;
-    margin: 2rem auto;
 }
 .aside-wrap li{
-    padding: 2rem auto;
+    margin: 2rem 0;
 }
 
 
