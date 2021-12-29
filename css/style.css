@@ -55,13 +55,17 @@ a,  a:link{
 
 /* header-line end */
 
-.img figure{
+/************************** hero style ********************/
+.hero-wrap{
     max-width: 900px;
-    display: flex;
-    
+    margin: 0 auto;
+    height: 395px;
+}
+#icons{
+    background: #d60c00;
 }
 
-#main img{
-    
-    margin: 0 auto;
+#hnb{
+    display: flex;
+    justify-content: center;
 }
