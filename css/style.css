@@ -18,7 +18,7 @@ a,  a:link{
 .header-top{
     border-bottom: 1px solid #d60c00;
 }
-.top-wrap{
+.top-wrap{     /* 상단네비탑 */
     max-width: 900px;
     margin: 0 auto;
     display: flex;
@@ -38,4 +38,30 @@ a,  a:link{
 }
 #tnb li:hover{
     color: #000000;
+}                /* 상단네비탑 END */
+
+
+
+#gnb{  /* 하단네비*/
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 300px;
+
+
+}/* 하단네비 end*/
+
+
+
+
+/* header-line end */
+
+.img figure{
+    max-width: 900px;
+    display: flex;
+    
+}
+
+#main img{
+    
+    margin: 0 auto;
 }
