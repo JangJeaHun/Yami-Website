@@ -14,7 +14,7 @@ a,  a:link{
 
 
 
-/* header-line */
+/* header style */
 .header-top{
     border-bottom: 1px solid #d60c00;
 }
@@ -49,11 +49,7 @@ a,  a:link{
 
 
 }/* 하단네비 end*/
-
-
-
-
-/* header-line end */
+/* header style end */
 
 /************************** hero style ********************/
 .hero-wrap{
@@ -69,3 +65,29 @@ a,  a:link{
     display: flex;
     justify-content: center;
 }
+/************************** hero style END********************/
+
+
+/************************** main style ********************/
+#main > article > h3{
+    font-size: 22px;
+    color: #d60c00;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 40px auto;
+}
+.prd{
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.prd li{
+    border-radius: 50%;
+    overflow: hidden;     /* border-radius으로 깍았으면 숨겨 줘야한다..이코드로 */
+}
+
+
+
+/************************** main style ********************/
