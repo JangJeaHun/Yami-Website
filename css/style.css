@@ -87,7 +87,44 @@ a,  a:link{
     border-radius: 50%;
     overflow: hidden;     /* border-radius으로 깍았으면 숨겨 줘야한다..이코드로 */
 }
+.prd img{
+    width: 220px;
+    height: 220px;
+}
+
+.aside-wrap{
+    border-top: 1px solid #191919;
+    background: #f1f1f1;
+    margin: 2rem auto;
+}
+.aside-wrap a{
+    color: #d60c00;
+    
+}
+.aside-wrap ul{
+    display: flex;
+    justify-content: center;
+    column-gap: 3rem;
+    margin: 2rem auto;
+}
+.aside-wrap li{
+    padding: 2rem auto;
+}
 
 
 
-/************************** main style ********************/
+/************************** main style END********************/
+/************************** footer style ********************/
+.footer-logo, address{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+address p{
+    font-size: 12px;
+    color: #999999;
+    font-weight: 700;
+}
+
+
+/************************** footer style END ********************/
