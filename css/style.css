@@ -26,53 +26,63 @@ a,  a:link{
     align-items: center;
     margin: 20px auto;
 }
-#tnb{
+.tnb{
     display: flex;
-    column-gap: 1rem;    
+    justify-content: space-around;
 }
-#tnb li{
+.tnb li{
+    margin: 10px 15px;
     font-size: 13px;
     color: #888888;
     font-weight: 500;
-
 }
-#tnb li:hover{
+.tnb li:hover{
     color: #000000;
 }                /* 상단네비탑 END */
 
 
-
-.gnb{  /* header의 하단네비*/
+/* header의 하단네비*/
+.gnb{  
     display: flex;
     justify-content: space-around;
     margin: 0px 300px;
 }
 .gnb > li {
     position: relative;
-    background: yellow;
 }
 
 .gnb > li > a {
-    display: block;
-    padding: 20px 40px;
+    display: inline-block;
+    padding: 20px 50px;
 }
 
 .gnb li:hover .lnb{
     color: white;
+    display: block;
 }
 
 .lnb{
     display: none;
     position: absolute;
-    background: #d60c00;
+    background: #f18680;
     color: white;
     width: 100%;
+    height: 150px;
+    line-height: 3rem;
+    
 }
 .lnb > li{
     text-align: center;
 }
+.lnb > li > a{
+    color: black;
+}
 .lnb > li:hover{
-    background: #800600;
+    background: white;
+    display: flex;
+    padding: 0 30px;
+    font-size: large;
+    
 }
 
 /*  header의 하단네비 end*/
@@ -154,10 +164,13 @@ a,  a:link{
     align-items: center;
     justify-content: center;
     color: white;
+    
     background: url(https://cdn.pixabay.com/photo/2016/08/11/08/04/vegetables-1584999_960_720.jpg) no-repeat center/cover;
 }
 .text p{
     text-shadow: 1 1 10px #000000;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 .breadcrumb{
     max-width: 900px;
@@ -170,9 +183,34 @@ a,  a:link{
 .breadcrumb a:hover{
     color: purple;
 }
+#mind{
+    margin: 100px auto;
+}
+
+#main > h1{
+    text-align: center;
+}
+#main > article > h3, article > p{
+    text-align: left;
+    margin-left: 20px;
+}
+#mind , #mind > .mid-cols{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.mid-cols img,.mind-col1{
+    width: 230px;
+    height: 234px;
+}
+.mid-cols p{
+    text-align: center;
+}
 
 
-/************************** ain>about style END ********************/
+
+/************************** main>about style END ********************/
 
 
 /************************** footer style ********************/
