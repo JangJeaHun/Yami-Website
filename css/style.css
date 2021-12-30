@@ -115,8 +115,40 @@ a,  a:link{
 .aside-wrap li{
     margin: 2rem 0;
 }
-
 /************************** main style END********************/
+
+/************************** main>about style ********************/
+#slogan{
+    border-top: 1px solid #000000;
+}
+
+#slogan .text{
+    display: flex;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: url(https://cdn.pixabay.com/photo/2016/08/11/08/04/vegetables-1584999_960_720.jpg) no-repeat center/cover;
+}
+.text p{
+    text-shadow: 1 1 10px #000000;
+}
+.breadcrumb{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 15px 0;
+    text-align: right;
+    color: #888;
+    font-size: 1rem;
+}
+.breadcrumb a:hover{
+    color: purple;
+}
+
+
+/************************** ain>about style END ********************/
+
+
 /************************** footer style ********************/
 .footer-logo, address{
     display: flex;
