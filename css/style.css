@@ -153,7 +153,7 @@ a,  a:link{
 }
 /************************** main style END********************/
 
-/************************** main>about style ********************/
+/************************** main>intro style ********************/
 #slogan{
     border-top: 1px solid #000000;
 }
@@ -197,10 +197,21 @@ a,  a:link{
 #mind , #mind > .mid-cols{
     display: flex;
     justify-content: center;
+    align-items: center;
     
 }
-
-.mid-cols img,.mind-col1{
+.mid-cols div{
+    width: 230px;
+}
+.mind-col1{ 
+    background: red;
+    padding: 60px 0;
+}
+.mind-col2{ 
+    background: gray;
+    padding: 60px 0;
+}
+.mid-cols img{
     width: 230px;
     height: 234px;
 }
@@ -209,8 +220,7 @@ a,  a:link{
 }
 
 
-
-/************************** main>about style END ********************/
+/************************** main>intro style END ********************/
 
 
 /************************** footer style ********************/
