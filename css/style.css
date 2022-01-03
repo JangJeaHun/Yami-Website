@@ -240,6 +240,28 @@ article > p{
     text-align: center;
 }
 
+/************************** main>intro>mind style END ********************/
+
+
+.history{
+    display: flex;
+}
+.history ul{
+    width: 50%;
+}
+.history ul li{
+    display: flex;
+    margin: 2rem 0;
+}
+.history ul li p:nth-child(1){
+    font-weight: 700;
+    margin-right: 1rem;
+}
+
+
+
+
+/************************** main>intro>mind style END ********************/
 
 /************************** main>intro style END ********************/
 
