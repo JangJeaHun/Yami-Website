@@ -115,8 +115,6 @@ a,  a:link{
     text-align: center;
     text-transform: uppercase;
     margin: 40px auto;
-
-    text-align: left;
     
 }
 .prd{
@@ -202,9 +200,7 @@ a,  a:link{
 #main > h1{
     text-align: center;
 }
-#main > article > h3{
-   
-}
+
 article > p{
     text-align: center;
 }
@@ -274,6 +270,41 @@ article > p{
 /************************** main>intro>partner style END ********************/
 
 /************************** main>intro style END ********************/
+/************************** main>business style ********************/
+.business{
+    display: flex;
+    justify-content: space-around;
+    column-gap: 1rem;
+}
+.business li{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+/************************** main>business style END ********************/
+/************************** main>map style ********************/
+
+.tab-btns ul{
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+}
+.tab-btns ul li{
+    width: calc(33.333333% - 20px);
+    background: crimson;
+    color: white;
+    text-align: center;
+}
+.tab-btns ul li a{
+    display: block;
+    font-size: 1.5rem;
+    height: 50px;
+    line-height: 50px;
+}
+
+
+/************************** main>map style END ********************
+
 
 
 /************************** footer style ********************/

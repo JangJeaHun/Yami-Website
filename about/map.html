@@ -32,7 +32,7 @@
                     <a href="#"><img src="../images/logo.gif" alt="야미 logo" /></a>
                 </div>
                 <nav class="top-nav">
-                    <ul id="tnb">
+                    <ul class="tnb">
                         <li><a href="#">로그인</a></li>
                         <li><a href="#">회원가입</a></li>
                         <li><a href="#">장바구니</a></li>
@@ -45,11 +45,23 @@
         <div class="header-bottom">
             <div class="bottom-wrap">
                 <nav class="main-nav">
-                    <ul id="gnb">
-                        <li><a href="#"></a>야미소개</li>
-                        <li><a href="#"></a>생산공정</li>
-                        <li><a href="#"></a>제품소개</li>
-                        <li><a href="#"></a>고객센터</li>
+                    <ul class="gnb">
+                        <li><a href="#">야미소개</a>
+                            <ul class="lnb">
+                                <li><a href="#">기업소개</a></li>
+                                <li><a href="#">사업안내</a></li>
+                                <li><a href="#">오시는길</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">생산공정</a></li>
+                        <li><a href="#">제품소개</a></li>
+                        <li><a href="#">고객센터</a>
+                            <ul class="lnb">
+                                <li><a href="#">새소식</a></li>
+                                <li><a href="#">언론보도</a></li>
+                                <li><a href="#">질문답변</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -63,45 +75,30 @@
             </a>
         </div>
     </div>
-
-    <div id="icons">
-        <nav class="hot-nav">
-            <ul id="hnb">
-                <li>
-                    <a href="#"><img src="../images/visual_icon1.jpg" alt="기업소개" /></a>
-                </li>
-                <li>
-                    <a href="#"><img src="../images/visual_icon2.jpg" alt="사업안내" /></a>
-                </li>
-                <li>
-                    <a href="#"><img src="../images/visual_icon3.jpg" alt="제품정보" /></a>
-                </li>
-                <li>
-                    <a href="#"><img src="../images/visual_icon4.jpg" alt="커뮤니티" /></a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-
     <section id="main">
         <h2 class="blind">mian section</h2>
         <article>
-            <h1>페이지를 준비 중입니다</h1>
-            <h1>페이지를 준비 중입니다</h1>
-            <h1>페이지를 준비 중입니다</h1>
-            <h1>페이지를 준비 중입니다</h1>
-            <h1>페이지를 준비 중입니다</h1>
-            <h1>페이지를 준비 중입니다</h1>
-            <h1>페이지를 준비 중입니다</h1>
-            <h1>페이지를 준비 중입니다</h1>
-            <h1>페이지를 준비 중입니다</h1>
-            <h1>페이지를 준비 중입니다</h1>
-            <h1>페이지를 준비 중입니다</h1>
-            <h1>페이지를 준비 중입니다</h1>
-            <h1>페이지를 준비 중입니다</h1>
-            <h1>페이지를 준비 중입니다</h1>
-            <h1>페이지를 준비 중입니다</h1>
-            
+            <h3>오시는 길</h3>
+
+            <div id="tabs">
+                <div class="tab-btns">
+                    <ul>
+                        <li><a href="#">본사</a></li>
+                        <li><a href="#">공장</a></li>
+                        <li><a href="#">물류창고</a></li>
+                    </ul>
+                </div>
+
+                <div class="tabs-contents">
+                    <div id="map" style="height: 400px;">지도입니다</div>
+                    <div class="map-info">
+                        <div class="info-contact">주소 및 연락처입니다.</div>
+                        <div class="info-traffic">교통정보 입니다</div>
+                    </div>
+                </div>
+
+            </div>
+
         </article>
     </section>
     <aside>
@@ -122,6 +119,24 @@
             <p>COPYRIGHT© Smile Food Yami. ALL RIGHTS RESERVED.</p>
         </address>
     </footer>
+
+    <!-- <script src="../script/map.js"></script>     지도 관련 가능을 연결 -->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=dd0ce418ea8258701abccc22fe49ada3">
+    </script>
+
+
+    <script>
+        var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+        var options = { //지도를 생성할 때 필요한 기본 옵션
+            center: new kakao.maps.LatLng(33.450701, 126.570667), //지도의 중심좌표.
+            level: 3 //지도의 레벨(확대, 축소 정도)
+        };
+
+        var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+    </script>
+
+    
+
 </body>
 
 </html>
