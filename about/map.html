@@ -18,7 +18,7 @@
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
     <link rel="stylesheet" href="../css/style.css" />
-    
+
 </head>
 
 <body>
@@ -137,9 +137,19 @@
         };
 
         var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+
+        var markerPosition = new kakao.maps.LatLng(37.21995607845009, 127.37102271317123);
+
+        // 마커를 생성합니다
+        var marker = new kakao.maps.Marker({
+            position: markerPosition
+        });
+
+        // 마커가 지도 위에 표시되도록 설정합니다
+        marker.setMap(map);
     </script>
 
-    
+
 
 </body>
 
