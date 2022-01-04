@@ -289,6 +289,9 @@ article > p{
     column-gap: 20px;
     justify-content: center;
 }
+#map{
+    height: 400px;
+}
 .tab-btns ul li{
     width: calc(33.333333% - 20px);
     background: crimson;
@@ -303,8 +306,7 @@ article > p{
 }
 
 
-/************************** main>map style END ********************
-
+/************************** main>map style END ********************/
 
 
 /************************** footer style ********************/
