@@ -308,7 +308,7 @@ article > p{
 
 /************************** main>map style END ********************/
 /************************** main>process style  ********************/
-.steps .step{
+.step{
     border: 3px solid gray;
     width: 180px;
     height: 180px;
@@ -319,10 +319,15 @@ article > p{
     flex-direction: column;
     align-items: center;
     row-gap: 1rem;
+    margin: 20px auto;
 }
+
+
+
 .step .title{
     color: green;
     text-transform: uppercase;
+    margin: 0 auto;
 }
 .title::after{
     content: '';
