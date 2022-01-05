@@ -96,6 +96,9 @@ a,  a:link{
     margin: 0 auto;
     height: 395px;
 }
+#hero{
+    border-top: #000000 1px solid;
+}
 #icons{
     background: #d60c00;
 }
