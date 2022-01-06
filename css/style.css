@@ -479,14 +479,19 @@ article > p{
     display: flex;
     justify-content: center;
 }
-.login-top li label{
-    margin-right: 30px;
-}
+
+
+
 .login-top li{
     width: 600px;
-    text-align: right;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* text-align: right; */
 }
-label{
+.Id-wrap{
+    width: 140px;
+    height: 50px;
     font-size: 34px;
 }
 #userId,#userPw{
@@ -504,6 +509,13 @@ label{
     height: 125px;
 }
 
+/************************** main>login login-bottom style********************/ 
+.login-bottom{
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+}
+
 .login-bottom::before{
     content: '';
     position: absolute;
@@ -513,15 +525,30 @@ label{
     background: #000000;
 }
 
-.login-bottom{
+.login-bottom div{
+    margin: 40px auto;
+}
+.mini-menu{
     display: flex;
+    flex-direction: column;
+    width: 276px;
+    height: 110px;
+}
+.mini-menu a{
+    display: flex;
+    background: rgb(212, 211, 211);
+    height: 45px;
+    align-items: center;
     justify-content: center;
-    margin: 50px auto;
+    margin: 9px;
 }
 
-.kakao-login{
-    text-align: center;
+
+.kakao-login img{
+    height: 100px;
 }
+
+/************************** main>login style END********************/
 
 /************************** footer style ********************/
 .footer-logo, address{
