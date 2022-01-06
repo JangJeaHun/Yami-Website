@@ -84,29 +84,51 @@
             <p>식품을 통해 인류의 건강과 행복을 추구하고 있습니다</p>
         </div>
         <div class="breadcrumb">
-            <a href="#"><i class="fas fa-home"></i>홈</a> &gt; 야미소개
+            <a href="#"><i class="fas fa-home"></i>홈</a> &gt; 로그인
         </div>
     </div>
+
     <section id="main">
         <h2 class="blind">mian section</h2>
-        <article>
-
-
-            <a href="javascript:kakaoLogin();"><img src="../images/kakao_login.png" alt="카카오계정 로그인" style="height: 100px;"/></a>
-
-
-        </article>
-
-
-
-
-
-
-
-
-
-
+            <div class="signin_warp">
+                <h3>LOGIN</h3>
+                <div class="id-pw">
+                    <dl>
+                        <dt>
+                            <p>아이디</p>
+                        </dt>
+                        <dd>
+                            <input type="text" id="member_id" maxlength="16" value class="input">
+                        </dd>
+                        <dt>
+                            <p>비밀번호</p>
+                        </dt>
+                        <dd>
+                            <input type="password" id="member_pwd" maxlength="16" value class="input">
+                        </dd>
+                    </dl>
+                    <p class="btn"><a href="#"><img src="../images/login_gtn.png" alt="로그인버튼"></a></p>
+                </div>
+                <ul class="signin_bottom">
+                    <li>
+                        <a href="#">회원가입</a>
+                    </li>
+                    <li>
+                        <a href="#">아이디/비밀번호 찾기</a>
+                    </li>
+                
+                    <div class="kakao-login">
+                        <article>
+                            <a href="javascript:kakaoLogin();"><img src="../images/kakao_login.png" alt="카카오계정 로그인" style="height: 100px;"/></a>
+                        </article>
+                    </div>
+                </ul>
+            </div>
     </section>
+
+
+
+
     <aside>
         <div class="aside-wrap">
             <ul>
@@ -126,10 +148,6 @@
         </address>
     </footer>
 
-
-
-
-    
     <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
     <script>
         function saveToDos(token) { //item을 localStorage에 저장합니다. 
