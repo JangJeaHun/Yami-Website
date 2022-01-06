@@ -1,13 +1,18 @@
+*::before{
+    box-sizing: border-box;
+}
+*::after{
+    box-sizing: border-box;
+}
+
 body{
     font-family: 'Lato','Noto Sans KR', sans-serif;
     /* 기본 폰트 크기는 16px */
 }
-
 a,  a:link{
     text-decoration: none;
     color: inherit;
 }
-
 .blind{
     display:none ;
 }
@@ -340,11 +345,163 @@ article > p{
     background: greenyellow;
     margin: 10px auto;
 }
-.slick-prev:before, .slick-next:before {
+
+
+
+/*******************************custom-Arrows*****************/
+.custom-prev:before, .custom-next:before {
     color: gray !important;
+}
+.custom-prev,
+.custom-next
+{
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.custom-prev:hover,
+.custom-prev:focus,
+.custom-next:hover,
+.custom-next:focus
+{
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+.custom-prev:hover:before,
+.custom-prev:focus:before,
+.custom-next:hover:before,
+.custom-next:focus:before
+{
+    opacity: 1;
+}
+.custom-prev.slick-disabled:before,
+.custom-next.slick-disabled:before
+{
+    opacity: .25;
+}
+
+.custom-prev:before,
+.custom-next:before
+{
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+
+    opacity: .75;
+    color: white;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.custom-prev
+{
+    left: -25px;
+}
+[dir='rtl'] .custom-prev
+{
+    right: -25px;
+    left: auto;
+}
+.custom-prev:before
+{
+    content: '';
+    background: url(../images/custom-prev.png);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+[dir='rtl'] .custom-prev:before
+{
+    content: '';
+    background: url(../images/custom-prev.png);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.custom-next
+{
+    right: -25px;
+}
+[dir='rtl'] .custom-next
+{
+    right: auto;
+    left: -25px;
+}
+.custom-next:before
+{
+    content: '';
+    background: url(../images/custom-next.png);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    
+}
+[dir='rtl'] .custom-next:before
+{
+    content: '';
+    background: url(../images/custom-next.png);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
 }
 
 /************************** main>process style END ********************/
+/************************** main>login style********************/  
+.login-top{
+    display: flex;
+    justify-content: center;
+}
+.login-top li label{
+    margin-right: 30px;
+}
+.login-top li{
+    width: 600px;
+    text-align: right;
+}
+label{
+    font-size: 34px;
+}
+#userId,#userPw{
+    width: 50%;
+    height: 55px;
+}
+.login-btn input{
+    width: 190px;
+    height: 125px;
+}
+
+
+
+.login-bottom{
+    display: flex;
+    justify-content: center;
+}
+
+
+.kakao-login{
+    text-align: center;
+}
 
 
 /************************** footer style ********************/
