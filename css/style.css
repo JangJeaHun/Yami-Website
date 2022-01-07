@@ -331,7 +331,6 @@ article > p{
 }
 
 
-
 .step .title{
     color: green;
     text-transform: uppercase;
@@ -468,6 +467,8 @@ article > p{
 
 /************************** main>process style END ********************/
 /************************** main>login style********************/  
+
+
 .tooltip{
     text-align: center;
     margin: 50px auto;
@@ -479,9 +480,6 @@ article > p{
     display: flex;
     justify-content: center;
 }
-
-
-
 .login-top li{
     width: 600px;
     display: flex;
@@ -494,16 +492,23 @@ article > p{
     height: 50px;
     font-size: 34px;
 }
-#userId,#userPw{
-    width: 50%;
+#userId,#userPw,#userPw2{
+    width: 80%;
     height: 55px;
 }
+#checkPw{
+    position: absolute;
+    right: 0;
+}
+#userPhone{
+    height: 60px;
+}
+
+
 #userId:focus, #userPw:focus{
     border: #d60c00 2px solid;
     outline: none;
 }
-
-
 .login-btn input{
     width: 190px;
     height: 125px;
@@ -547,9 +552,77 @@ article > p{
 .kakao-login img{
     height: 100px;
 }
-
 /************************** main>login style END********************/
+/************************** main>signup style********************/
+.signup-wrap
+{
+    border: #000000 solid 1px;
+    max-width: 900px;
+}
+.signup-wrap li{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+    padding: 1rem;
+    padding-right: 30px;
+    
+}
+.signup-wrap label{
+    width: 25%;
+    margin-left: 10px;
+}
+#checkId{
+    position: absolute;
+    right: 0;
+    background: red;
+    color: white;
+    border-radius: 10px;
+}
+#userEmail
+{   
+    height: 60px;
+    width: 40%;
+    
+}
 
+.emailAuth{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+#emailAddr{
+    width: 30%; 
+}
+
+
+.phone-wrap{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+#userPhone{
+    width: 80%;
+}
+.photo-wrap{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+#photoSrc{
+width: 60%;
+}
+
+
+
+
+
+
+
+
+
+
+/************************** main>signup style********************/
 /************************** footer style ********************/
 .footer-logo, address{
     display: flex;
