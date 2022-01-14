@@ -133,7 +133,7 @@ a,  a:link{
 }
 .prd li{
     border-radius: 50%;
-    overflow: hidden;     /* border-radius으로 깍았으면 숨겨 줘야한다..이코드로 */
+    overflow: hidden;     /*border-radius으로 깍았으면 숨겨 줘야한다..이코드로*/
 }
 .prd img{
     width: 220px;
