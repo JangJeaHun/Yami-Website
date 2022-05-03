@@ -309,8 +309,7 @@ article > p{
 }
 .tab-btns ul li a{
     display: block;
-    font-size: 1.5rem;
-    height: 50px;
+    font-size: 2rem;
     line-height: 50px;
 }
 
@@ -481,6 +480,7 @@ article > p{
     display: flex;
     justify-content: center;
 }
+
 .login-top li{
     width: 600px;
     display: flex;

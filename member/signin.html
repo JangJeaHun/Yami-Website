@@ -129,24 +129,24 @@
 
         <!-- <article>
                 <div class="signin_warp">
-                <h3>LOGIN</h3>
-                <div class="id-pw">
-                    <dl>
-                        <dt>
-                            <p>아이디</p>
-                        </dt>
-                        <dd>
-                            <input type="text" id="member_id" maxlength="16" value class="input">
-                        </dd>
-                        <dt>
-                            <p>비밀번호</p>
-                        </dt>
-                        <dd>
-                            <input type="password" id="member_pwd" maxlength="16" value class="input">
-                        </dd>
-                    </dl>
-                    <p class="btn"><a href="#"><img src="../images/login_gtn.png" alt="로그인버튼"></a></p>
-                </div>
+                    <h3>LOGIN</h3>
+                    <div class="id-pw">
+                        <dl>
+                            <dt>
+                                <p>아이디</p>
+                            </dt>
+                            <dd>
+                                <input type="text" id="member_id" maxlength="16" value class="input">
+                            </dd>
+                            <dt>
+                                <p>비밀번호</p>
+                            </dt>
+                            <dd>
+                                <input type="password" id="member_pwd" maxlength="16" value class="input">
+                            </dd>
+                        </dl>
+                        <p class="btn"><a href="#"><img src="../images/login_gtn.png" alt="로그인버튼"></a></p>
+                    </div>
                 <ul class="signin_bottom">
                     <li>
                         <a href="#">회원가입</a>
@@ -193,7 +193,7 @@
             typeof (Storage) !== 'undefined' && sessionStorage.setItem('AccessKEY', JSON.stringify(token));
         };
 
-        window.Kakao.init('dd0ce418ea8258701abccc22fe49ada3');
+        window.Kakao.init('b7e75b1729113fbd9142693870cb63ce');
 
         function kakaoLogin() {
             window.Kakao.Auth.login({
